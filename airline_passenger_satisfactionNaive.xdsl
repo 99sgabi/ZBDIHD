@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="airline_passenger_satisfaction1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Satisfaction" target="true" diagtype="target">
+			<state id="SNeutral_or_Dissatisfied" fault="true" />
+			<state id="Satisfied" fault="true" />
+			<probabilities>0.5655374191561442 0.4344625808438559</probabilities>
+		</cpt>
+		<cpt id="Gender" target="true" diagtype="observation" ranked="true">
+			<state id="Female" />
+			<state id="Male" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.512307357185645 0.4876926428143549 0.5009746934146169 0.4990253065853832</probabilities>
+		</cpt>
+		<cpt id="Customer_Type" target="true" diagtype="observation" ranked="true">
+			<state id="SFirst_time" />
+			<state id="Returning" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.2461471437129009 0.753852856287099 0.1010136811512015 0.8989863188487985</probabilities>
+		</cpt>
+		<cpt id="Type_of_Travel" target="true" diagtype="observation" ranked="true">
+			<state id="Business" />
+			<state id="Personal" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.5083183575668464 0.4916816424331536 0.9278372439214575 0.07216275607854257</probabilities>
+		</cpt>
+		<cpt id="Class" target="true" diagtype="observation" ranked="true">
+			<state id="Business" />
+			<state id="Economy" />
+			<state id="SEconomy_Plus" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.2585906442302456 0.6448565049283885 0.09655285084136579 0.7649748351882045 0.1939285461118594 0.04109661869993621</probabilities>
+		</cpt>
+		<cpt id="Departure_and_Arrival_Time_Convenience" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.04720089310025595 0.1346593693840876 0.1627865817132277 0.1707101236181452 0.2653569678157164 0.2192860643685672 0.0569575388105196 0.168675125824059 0.1697207060324662 0.1743637910257319 0.2195541220670589 0.2107287162401645</probabilities>
+		</cpt>
+		<cpt id="Ease_of_Online_Booking" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.02586723302292654 0.1848962587812449 0.2849616075804607 0.2854653379077493 0.1558705004628873 0.06293906224473125 0.0670234635287446 0.1471787056071454 0.1616218898419225 0.1670270078684341 0.2302934713262919 0.2268554618274616</probabilities>
+		</cpt>
+		<cpt id="Check_in_Service" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>1.361433316996133e-05 0.1667619669988564 0.1642160866960736 0.2650846811523171 0.2670996024614714 0.1368240483581114 2.953564065758151e-06 0.06838977594262997 0.07159734651804334 0.2832261189577464 0.2961981723345562 0.2805856326829586</probabilities>
+		</cpt>
+		<cpt id="Online_Boarding" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.01825682078091815 0.1556662854653379 0.264417578826989 0.3183711811795458 0.1974350596307793 0.04585307411642978 0.03081803360034026 0.03237754306372723 0.044516906500319 0.06613737860636563 0.4247182249946835 0.4014319132345645</probabilities>
+		</cpt>
+		<cpt id="Gate_Location" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>2.269024637069508e-06 0.150030178027673 0.1773673868550864 0.3174978103912252 0.2527216950521649 0.1023806606492133 1.772169844757922e-05 0.1944247536683916 0.1996880981073226 0.219678173956192 0.2109413766215354 0.1752498759481109</probabilities>
+		</cpt>
+		<cpt id="On_board_Service" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>6.807166584980667e-05 0.1617246637259707 0.1860126341011817 0.2649757664869575 0.2452349833905135 0.1419838806295268 2.95356406575815e-06 0.05153673938341396 0.08308080360571102 0.1608954024821752 0.3666583966872826 0.3378257042773515</probabilities>
+		</cpt>
+		<cpt id="Seat_Comfort" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>1.361433316996133e-05 0.1597505854163263 0.1952431519904155 0.2496051843380711 0.2379921581440941 0.157395305777923 2.95356406575815e-06 0.05979490451127375 0.07422011140843657 0.08850354723044297 0.3947467909526425 0.3827316923331384</probabilities>
+		</cpt>
+		<cpt id="Leg_Room_Service" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.005336818602624843 0.1397239013233132 0.2421309154277623 0.2469503893699287 0.2036840385557915 0.1621739367205794 0.003650669880201319 0.0466435103140285 0.1197100730133976 0.1225809881619054 0.3708265400155951 0.3365882186148721</probabilities>
+		</cpt>
+		<cpt id="Cleanliness" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.0001906006643794587 0.1828949518052606 0.2155965800795077 0.2364809671622284 0.2149158634210096 0.1499210368676142 2.95356406575815e-06 0.05839491514410439 0.07579731461955141 0.2351480030953351 0.3222308860101484 0.3084259275667949</probabilities>
+		</cpt>
+		<cpt id="Food_and_Drink" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.001048303654087023 0.1749169525676632 0.2277814082666231 0.2280128519305124 0.1972989162990797 0.1709415672820345 0.0009746934146168569 0.05676260012759624 0.1887715318636138 0.19575388105196 0.2848054157510456 0.2729318777911675</probabilities>
+		</cpt>
+		<cpt id="In_flight_Service" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>6.807166584980667e-05 0.08541632630833741 0.1361841746991232 0.2618444698578664 0.3361515002995153 0.1803354571693079 2.95356406575815e-06 0.04586589637715831 0.07629351338259878 0.1078021348361067 0.4010733251814965 0.3689621766585739</probabilities>
+		</cpt>
+		<cpt id="In_flight_Wifi_Service" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.0001361433316996133 0.20421499754942 0.3312367260251593 0.3278331427326689 0.1346593693840876 0.001919620976964548 0.06922095413624442 0.1298646062238605 0.141596370596158 0.1436343659176296 0.2637697596937691 0.2519139434323386</probabilities>
+		</cpt>
+		<cpt id="In_flight_Entertainment" target="true" diagtype="observation" ranked="true">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.000245057997059304 0.18311278113598 0.2354735065076513 0.2363448238305288 0.1947802646626368 0.1500435658661439 2.95356406575815e-06 0.03943303384193706 0.08279726145539823 0.1156172653541028 0.3984505602911033 0.3636989254933929</probabilities>
+		</cpt>
+		<cpt id="Baggage_Handling" target="true" diagtype="observation" ranked="true">
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<state id="State5" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.08600174263464574 0.138022109677068 0.2681887491150683 0.330637695365681 0.1771497032075369 0.04804352449138726 0.07485645424257462 0.1090238888495073 0.3982951726093429 0.3697809598071879</probabilities>
+		</cpt>
+		<cpt id="Discreted_age" target="true" diagtype="observation" ranked="true">
+			<state id="S_0_18_" />
+			<state id="S_18_40_" />
+			<state id="S_40_65_" />
+			<state id="S_65__" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.1116375319936829 0.4583129118335784 0.3635843816369874 0.06646517453575124 0.02918763734316297 0.3642163464946481 0.5870844261714043 0.01951158999078472</probabilities>
+		</cpt>
+		<cpt id="Discreted_flight_distance" target="true" diagtype="observation" ranked="true">
+			<state id="S_0_600_" />
+			<state id="S_1200_2000_" />
+			<state id="S_2000__" />
+			<state id="S_600_1200_" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.4481157762892773 0.1230871861896204 0.1107934433371453 0.3180035941839569 0.2937371517686255 0.1765790033316793 0.3321577940029773 0.197526050896718</probabilities>
+		</cpt>
+		<cpt id="Discreted_Arrival_delay" target="true" diagtype="observation" ranked="true">
+			<state id="S_0_15_" />
+			<state id="S_15_60_" />
+			<state id="S_200__" />
+			<state id="S_60_200_" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.7445406523988455 0.1755432118934815 0.00846811523171595 0.07144802047595708 0.8037144679946127 0.1378393705252711 0.006149429361309989 0.05229673211880627</probabilities>
+		</cpt>
+		<cpt id="Discreted_departure_delay" target="true" diagtype="observation" ranked="true">
+			<state id="S_0_15_" />
+			<state id="S_15_60_" />
+			<state id="S_200__" />
+			<state id="S_60_200_" />
+			<parents>Satisfaction</parents>
+			<probabilities>0.7296874149104177 0.1887627294015139 0.00856341556390568 0.07298644012416272 0.8024739491032821 0.139026724321259 0.006592471822499469 0.05190685475295953</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 3.0.6518.0 ACADEMIC" name="airline_passenger_satisfaction1Naive">
+			<node id="Gender">
+				<name>Gender</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>933 297 1005 345</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Customer_Type">
+				<name>Customer Type</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1085 341 1157 389</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Type_of_Travel">
+				<name>Type of Travel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1064 416 1136 464</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Class">
+				<name>Class</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>980 490 1052 538</position>
+				<barchart width="128" height="72" />
+			</node>
+			<node id="Departure_and_Arrival_Time_Convenience">
+				<name>Departure and Arrival Time Convenience</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>920 594 992 642</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Ease_of_Online_Booking">
+				<name>Ease of Online Booking</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>770 669 842 717</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Check_in_Service">
+				<name>Check-in Service</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>597 670 669 718</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Online_Boarding">
+				<name>Online Boarding</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>426 652 498 700</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Gate_Location">
+				<name>Gate Location</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>326 459 398 507</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="On_board_Service">
+				<name>On-board Service</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>178 620 250 668</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Seat_Comfort">
+				<name>Seat Comfort</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>128 463 200 511</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Leg_Room_Service">
+				<name>Leg Room Service</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>70 316 142 364</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Cleanliness">
+				<name>Cleanliness</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>106 138 178 186</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Food_and_Drink">
+				<name>Food and Drink</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>280 98 352 146</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="In_flight_Service">
+				<name>In-flight Service</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>418 48 490 96</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="In_flight_Wifi_Service">
+				<name>In-flight Wifi Service</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>344 267 416 315</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="In_flight_Entertainment">
+				<name>In-flight Entertainment</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>658 49 730 97</position>
+				<barchart width="128" height="126" />
+			</node>
+			<node id="Baggage_Handling">
+				<name>Baggage Handling</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>571 182 643 230</position>
+				<barchart width="128" height="108" />
+			</node>
+			<node id="Satisfaction">
+				<name>Satisfaction</name>
+				<interior color="ffff80" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>634 329 706 377</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Discreted_age">
+				<name>Discreted age</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>916 48 988 96</position>
+				<barchart width="128" height="90" />
+			</node>
+			<node id="Discreted_flight_distance">
+				<name>Discreted flight distance</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>748 176 820 224</position>
+				<barchart width="128" height="90" />
+			</node>
+			<node id="Discreted_Arrival_delay">
+				<name>Discreted Arrival delay</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1043 126 1115 174</position>
+				<barchart width="128" height="90" />
+			</node>
+			<node id="Discreted_departure_delay">
+				<name>Discreted departure delay</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1066 235 1138 283</position>
+				<barchart width="128" height="90" />
+			</node>
+			<textbox>
+				<caption>Input file: airline_passenger_satisfaction1.csv\nData rows: 129880\nElapsed time: 0.234s\n\nLearning algorithm: Naive Bayes\nAlgorithm parameters:\nClass variable: Satisfaction\n\nEM Log Likelihood: -3.65031e+06</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>1280 670 1501 796</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>
